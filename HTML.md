@@ -1036,6 +1036,7 @@ CSS 可以通过以下方式添加到 HTML 中:
 当特殊的样式需要应用到个别元素时，就可以使用内联样式。 使用内联样式的方法是在相关的标签中使用样式属性。样式属性可以包含任何 CSS 属性。以下实例显示出如何改变段落的颜色和左外边距。
 
 <p style="color:blue;margin-left:20px;">这是一个段落。</p>
+
 ```html
 <p style="color:blue;margin-left:20px;">这是一个段落。</p>
 ```
@@ -1050,10 +1051,11 @@ CSS 可以通过以下方式添加到 HTML 中:
 <h2 style="background-color:red;">这是一个标题</h2>
 <p style="background-color:green;">这是一个段落。</p>
 </body>
+
 ```html
 <body style="background-color:yellow;">
-<h2 style="background-color:red;">这是一个标题</h2>
-<p style="background-color:green;">这是一个段落。</p>
+  <h2 style="background-color:red;">这是一个标题</h2>
+  <p style="background-color:green;">这是一个段落。</p>
 </body>
 ```
 
