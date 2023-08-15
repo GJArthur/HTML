@@ -28,7 +28,6 @@ HTML 文档的后缀名:
 > <body>
 > <h1>我的第一个标题</h1>
 > <p>我的第一个段落。</p>
-
 > </body>
 > </html>
 
@@ -41,7 +40,6 @@ HTML 文档的后缀名:
   </head>
   <body>
     <h1>我的第一个标题</h1>
-
     <p>我的第一个段落。</p>
   </body>
 </html>
@@ -57,7 +55,7 @@ HTML 文档的后缀名:
 
 ---
 
-![HTML](image/part1/001.jpg)
+![HTML网页结构](image/part1/001.jpg)
 
 ---
 
@@ -159,7 +157,7 @@ HTML 文档由相互嵌套的 HTML 元素构成。
 
 ### HTML 文档实例
 
-![元素](image/part3/006.jpg)
+![文档实例](image/part3/006.jpg)
 
 ---
 
@@ -278,7 +276,9 @@ HTML 链接由 `<a> `标签定义。链接的地址在 **href 属性**中指定�
 
 标题（Heading）是通过 `<h1> - <h6> `标签进行定义的。
 `<h1> `定义最大的标题。 `<h6> `定义最小的标题。
-
+><h1>这是一个标题。</h1>
+><h2>这是一个标题。</h2>
+><h3>这是一个标题。</h3>
 ```html
 <h1>这是一个标题。</h1>
 <h2>这是一个标题。</h2>
@@ -335,7 +335,7 @@ hr 元素可用于分隔内容。
 ### HTML 换行
 
 如果您希望在不产生一个新段落的情况下进行换行（新行），请使用 `<br> `标签：
-![折行](image/part6/012.jpg)
+![换行](image/part6/012.jpg)
 
 ```html
 <p>这个<br />段落<br />演示了分行的效果</p>
@@ -574,7 +574,7 @@ HTML 使用标签 `<a>`来设置**超文本链接**。
 
 `<a href="url">链接文本</a>`
 href 属性描述了链接的目标。
-<a href="https://www.runoob.com/">访问菜鸟教程</a>
+><a href="https://www.runoob.com/">访问菜鸟教程</a>
 
 ```html
 <a href="https://www.runoob.com/">访问菜鸟教程</a>
@@ -595,7 +595,7 @@ target="_top" :以整个浏览器作为窗口显示新页面。（突破了页�
 ```
 
 ![target](image/part8/027.jpg)
-<a href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer">访问菜鸟教程!</a>
+><a href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer">访问菜鸟教程!</a>
 
 ```html
 <a href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer"
@@ -613,22 +613,21 @@ id 属性可用于创建一个 HTML 文档书签。
 #### 实例
 
 在 HTML 文档中插入 ID:
-<a id="tips">有用的提示部分</a>
+><a id="tips">有用的提示部分</a>
 
 ```html
 <a id="tips">有用的提示部分</a>
 ```
 
 在 HTML 文档中创建一个链接到"有用的提示部分(id="tips"）"：
-<a href="#tips">访问有用的提示部分</a>
+><a href="#tips">访问有用的提示部分</a>
 
 ```html
 <a href="#tips">访问有用的提示部分</a>
 ```
 
 或者，从另一个页面创建一个链接到"有用的提示部分(id="tips"）"：
-<a href="https://www.runoob.com/html/html-links.html#tips">
-访问有用的提示部分</a>
+><a href="https://www.runoob.com/html/html-links.html#tips">访问有用的提示部分</a>
 
 ```html
 <a href="https://www.runoob.com/html/html-links.html#tips">
@@ -748,7 +747,7 @@ id 属性可用于创建一个 HTML 文档书签。
 #### 关于创建电子邮件链接时如何发送邮件内容
 
 在进行邮件内容发送时，需要使用关键字：**mailto**
-<a href="mailto:zhangrr601@163.com?subject=这是邮件的主题&body=这是邮件的内容" rel="nofollow">发送邮件</a>
+><a href="mailto:zhangrr601@163.com?subject=这是邮件的主题&body=这是邮件的内容" rel="nofollow">发送邮件</a>
 
 ```html
 <a
@@ -762,7 +761,7 @@ id 属性可用于创建一个 HTML 文档书签。
 关于创建电子邮件链接时如何进行抄送，密送.
 在进行抄送时，需要使用关键字：cc
 在进行密送时，需要使用关键字：bcc
-<a href="mailto:zhangrr601@163.com?cc=someone@163.com&bcc=somebody@163.com" rel="nofollow">发送邮件</a>
+><a href="mailto:zhangrr601@163.com?cc=someone@163.com&bcc=somebody@163.com" rel="nofollow">发送邮件</a>
 
 ```html
 <a
@@ -1035,7 +1034,7 @@ CSS 可以通过以下方式添加到 HTML 中:
 
 当特殊的样式需要应用到个别元素时，就可以使用内联样式。 使用内联样式的方法是在相关的标签中使用样式属性。样式属性可以包含任何 CSS 属性。以下实例显示出如何改变段落的颜色和左外边距。
 
-<p style="color:blue;margin-left:20px;">这是一个段落。</p>
+><p style="color:blue;margin-left:20px;">这是一个段落。</p>
 
 ```html
 <p style="color:blue;margin-left:20px;">这是一个段落。</p>
@@ -1047,10 +1046,10 @@ CSS 可以通过以下方式添加到 HTML 中:
 
 背景色属性（background-color）定义一个元素的背景颜色：
 
-<body style="background-color:yellow;">
-<h2 style="background-color:red;">这是一个标题</h2>
-<p style="background-color:green;">这是一个段落。</p>
-</body>
+><body style="background-color:yellow;">
+><h2 style="background-color:red;">这是一个标题</h2>
+><p style="background-color:green;">这是一个段落。</p>
+></body>
 
 ```html
 <body style="background-color:yellow;">
@@ -1065,8 +1064,8 @@ CSS 可以通过以下方式添加到 HTML 中:
 
 我们可以使用 font-family（字体），color（颜色），和 font-size（字体大小）属性来定义字体的样式:
 
-<h1 style="font-family:verdana;">一个标题</h1>
-<p style="font-family:arial;color:red;font-size:20px;">一个段落。</p>
+><h1 style="font-family:verdana;">一个标题</h1>
+><p style="font-family:arial;color:red;font-size:20px;">一个段落。</p>
 ```html
 <h1 style="font-family:verdana;">一个标题</h1>
 <p style="font-family:arial;color:red;font-size:20px;">一个段落。</p>
@@ -1079,8 +1078,8 @@ CSS 可以通过以下方式添加到 HTML 中:
 
 使用 text-align（文字对齐）属性指定文本的水平与垂直对齐方式：
 
-<h1 style="text-align:center;">居中对齐的标题</h1>
-<p>这是一个段落。</p>
+><h1 style="text-align:center;">居中对齐的标题</h1>
+><p>这是一个段落。</p>
 ```html
 <h1 style="text-align:center;">居中对齐的标题</h1>
 <p>这是一个段落。</p>
